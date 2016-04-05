@@ -1,6 +1,5 @@
 public abstract class Car {
-    //heroko trigg
-
+    //heroko triggerrrrr
     private String description = "undefined";
 
     public String getDescription() {
