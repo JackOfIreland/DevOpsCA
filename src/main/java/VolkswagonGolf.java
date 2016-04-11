@@ -5,7 +5,7 @@ public class VolkswagonGolf extends Car {
     }
 
     public String getDescription() {
-        return "Volkswagon golf with: ";
+        return "Volkswagon Golf with: ";
     }
 
 //testsdfs
