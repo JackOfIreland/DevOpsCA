@@ -3,3 +3,4 @@ applications:
 - name: CA
 - no-route: true
 - buildpack: https://github.com/cloudfoundry/java-buildpack.git
+- path: target/CA-1.0-SNAPSHOT.war
