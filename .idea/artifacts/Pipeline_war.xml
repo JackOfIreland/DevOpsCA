@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Pipeline:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="CA-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Pipeline:war exploded" />
+    </root>
+  </artifact>
+</component>
