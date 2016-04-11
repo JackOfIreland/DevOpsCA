@@ -1,4 +1,4 @@
 ---
 applications:
 - name: CA
-- timeout: -t
+- no-route: true
