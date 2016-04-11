@@ -15,6 +15,38 @@
             <version>4.11</version>
         </dependency>
     </dependencies>
+<build>
+    <plugins>
 
+        <plugin>
+            <groupId>org.cloudfoundry</groupId>
+            <artifactId>cf-maven-plugin</artifactId>
+            <version>1.0.1</version>
+            <configuration>
+                <server>pivotal-cloud-foundry</server>
+                <target>https://api.run.pivotal.io</target>
+                <space>development</space>
+                <appname>my-java-app</appname>
+                <url>my-java-app.cfapps.io</url>
+                <memory>512</memory>
+                <instances>3</instances>
+
+                <env>
+                    <greeting>Hello</greeting>
+                </env>
+
+                <services>
+                    <service>
+                        <name>app-db</name>
+                        <label>elephantsql</label>
+                        <provider>elephantsql</provider>
+                        <version>n/a</version>
+                        <plan>turtle</plan>
+                    </service>
+                </services>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 
 </project>
