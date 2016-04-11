@@ -31,10 +31,6 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.7.6.201602180812</version>
-                <configuration>
-                    <destfile>$target/coverage-reports/jacoco-unit.exec</destfile>
-                    <datafile>$target/coverage-reports/jacoco-unit.exec</datafile>
-                </configuration>
 
                 <executions>
                     <execution>
@@ -42,6 +38,9 @@
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
+                        <configuration>
+                            <destfile>target/coverage-reports/jacoco-unit.exec</destfile>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>jacoco-site</id>
@@ -49,6 +48,10 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <datafile>target/coverage-reports/jacoco-unit.exec</datafile>
+                            <outputDirectory>target/jacoco-it</outputDirectory>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
