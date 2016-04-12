@@ -7,4 +7,8 @@ public class ToyotaAvensis extends Car {
     public String getDescription() {
         return "Toyota Avensis with: ";
     }
+
+    public String getYear(){
+        return "2001";
+    }
 }
