@@ -11,4 +11,7 @@ public class ToyotaAvensis extends Car {
     public String getYear(){
         return "2001";
     }
+    public String getReg(){
+        return "2erere";
+    }
 }
