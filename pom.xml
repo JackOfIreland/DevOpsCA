@@ -8,6 +8,10 @@
     <artifactId>CA</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <argLine>-Xmx1G</argLine>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -30,7 +34,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version> 0.7.4.201502262128</version>
+                <version>0.7.5.201505241946</version>
                 <executions>
                     <!--
                         Prepares the property pointing to the JaCoCo runtime agent which
@@ -93,12 +97,6 @@
                 <configuration>
                     <!-- Sets the VM argument line used when unit tests are run. -->
                     <argLine>${surefireArgLine}</argLine>
-                    <!-- Skips unit tests if the value of skip.unit.tests property is true -->
-                    <skipTests>${skip.unit.tests}</skipTests>
-                    <!-- Excludes integration tests when unit tests are run. -->
-                    <excludes>
-                        <exclude>**/IT*.java</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
 
