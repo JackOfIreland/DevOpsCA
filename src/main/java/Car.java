@@ -1,5 +1,4 @@
 public abstract class Car {
-    //deploy triggerrrrr
     private String description = "undefined";
 
     public String getDescription() {

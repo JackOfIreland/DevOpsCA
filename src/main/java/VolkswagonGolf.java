@@ -7,5 +7,5 @@ public class VolkswagonGolf extends Car {
     public String getDescription() {
         return "Volkswagon Golf with: ";
     }
-    
+
 }
