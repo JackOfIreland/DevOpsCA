@@ -9,7 +9,7 @@ public class FordMondeoTest {
     public void testCost() throws Exception {
         FordMondeo testFord = new FordMondeo();
 
-        double expected = 28000;
+        double expected = 280001;
 
         double actual = testFord.cost();
 
