@@ -13,4 +13,13 @@ public class DesignACarTest {
 
 
     }
+
+    public void testChooseCarType2() throws Exception {
+        FordMondeo expected = new FordMondeo();
+
+
+        assertEquals(expected.getDescription(), DesignACar.chooseCarType(0).getDescription());
+
+
+    }
 }
