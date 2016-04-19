@@ -17,17 +17,7 @@ public class DesignACar {
         int carChoice = JOptionPane.showOptionDialog(null,
                 "Choose your base car model:","Choose an option",JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE, null, carModels ,"Metric");
 
-        if (carChoice == 0){
-
-            carToBeBuilt = new FordMondeo();
-
-        }
-        else if (carChoice == 1){
-            carToBeBuilt = new ToyotaAvensis();
-        }
-        else{
-            carToBeBuilt = new VolkswagonGolf();
-        }
+        carToBeBuilt = chooseCarType(carChoice);
 
         int entertainmentChoice = JOptionPane.showOptionDialog(null,
                 "Would you like to add on an Entertainment System?","Choose an option",JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE, null, yesNo ,"Yes");
@@ -57,5 +47,20 @@ public class DesignACar {
 
 
 
+    }
+
+    public static Car chooseCarType(int carChoice) {
+        Car carToBeBuilt;
+        if (carChoice == 0){
+
+            carToBeBuilt = new FordMondeo();
+        }
+        else if (carChoice == 1){
+            carToBeBuilt = new ToyotaAvensis();
+        }
+        else{
+            carToBeBuilt = new VolkswagonGolf();
+        }
+        return carToBeBuilt;
     }
 }
