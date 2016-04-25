@@ -8,11 +8,11 @@ public class ToyotaAvensis extends Car {
         return "Toyota Avensis with: ";
     }
 
-   public String getYear(){
+   /*public String getYear(){
         return "2001";
     }
     public String getReg(){
         return "2erere";
 
-    }
+    }*/
 }
