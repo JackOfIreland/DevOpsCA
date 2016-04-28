@@ -3,6 +3,7 @@ public class ToyotaAvensis extends Car {
     public double cost() {
         return 26000;
     }
+    //trigger build
 
     public String getDescription() {
         return "Toyota Avensis with: ";
