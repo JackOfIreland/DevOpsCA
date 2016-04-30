@@ -9,8 +9,6 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: junit:junit:4.11" />
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
-          <element id="library" level="project" name="Maven: hudson.plugins.sloccount:sloccount:1.2" />
-          <element id="library" level="project" name="Maven: findbugs:annotations:1.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

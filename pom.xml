@@ -14,12 +14,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-        </dependency>
-        <dependency>
-            <groupId>hudson.plugins.sloccount</groupId>
-            <artifactId>sloccount</artifactId>
-            <version>1.2</version>
-        </dependency>
+        </dependency
     </dependencies>
 
     <build>
